@@ -1,4 +1,4 @@
-package singleton;
+package com.tackr.singleton;
 
 public class DbSingletonDemo {
 
