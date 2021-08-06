@@ -10,11 +10,9 @@ class WebsiteFactoryTest {
 
 	@Test
 	void shouldCreateDifferentPagesAccordingWithTheSiteType() {
-		String siteType = "blog";
-		Website site = WebsiteFactory.getWebsite(siteType);
+		Website site = WebsiteFactory.getWebsite(WebsiteType.BLOG);
 		
-		siteType = "shop";
-		Website anotherSite = WebsiteFactory.getWebsite(siteType);
+		Website anotherSite = WebsiteFactory.getWebsite(WebsiteType.SHOP);
 		
 		Assertions.assertNotEquals(site, anotherSite);
 	}
