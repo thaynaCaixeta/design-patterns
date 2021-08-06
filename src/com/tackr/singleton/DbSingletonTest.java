@@ -1,6 +1,6 @@
 package com.tackr.singleton;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 import org.junit.platform.runner.JUnitPlatform;
@@ -16,5 +16,4 @@ class DbSingletonTest {
 		
 		assertEquals(instance, anotherInstance);
 	}
-
 }
